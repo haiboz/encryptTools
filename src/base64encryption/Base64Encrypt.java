@@ -19,7 +19,7 @@ public class Base64Encrypt {
     /**
      * jdk 实现base64的加解密
      */
-    public static void jdkBase64(){
+    private static void jdkBase64(){
         BASE64Encoder base64Encoder = new BASE64Encoder();
         String encode = base64Encoder.encode(str.getBytes());
         System.out.println("encode:"+encode);
@@ -34,7 +34,7 @@ public class Base64Encrypt {
     /**
      * cc的base64加解密
      */
-    public static void commonsCodecBase64(){
+    private static void commonsCodecBase64(){
         byte[] encode = Base64.encodeBase64(str.getBytes());
         System.out.println("encode:"+new String(encode));
         byte[] decode = Base64.decodeBase64(encode);
@@ -44,7 +44,7 @@ public class Base64Encrypt {
     /**
      * bc Base64加解密
      */
-    public static void bouncyCastleBase64(){
+    private static void bouncyCastleBase64(){
         byte[] encode = org.bouncycastle.util.encoders.Base64.encode(str.getBytes());
         System.out.println("encode:"+new String(encode));
         byte[] decode = Base64.decodeBase64(encode);
