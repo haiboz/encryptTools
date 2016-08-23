@@ -1,4 +1,4 @@
-package other;
+package dataencryption.other;
 
 import java.security.MessageDigest;
 

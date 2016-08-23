@@ -1,4 +1,4 @@
-package dataencryption.des;
+package dataencryption.rsa;
 
 import javax.crypto.Cipher;
 import java.security.KeyPair;
