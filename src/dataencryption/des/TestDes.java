@@ -2,7 +2,6 @@ package dataencryption.des;
 
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import sun.misc.BASE64Encoder;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -60,7 +59,7 @@ public class TestDes {
      */
     public static void bcDES(){
         try {
-            //增加provider 后续一样
+            //增加provider 后续一样  扩展第三方加解密包Bouncy Castle
             Security.addProvider(new BouncyCastleProvider());
             //生成KEY
             KeyGenerator keyGenerator = KeyGenerator.getInstance("DES","BC");//使用BC的provider
